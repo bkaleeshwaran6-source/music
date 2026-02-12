@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Kaleesh's Music Player - Most Played Songs">
+<meta name="author" content="Kaleeshwaran">
+<title>Kaleesh's Music Player</title>
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgba(7, 7, 7, 0.836);
+    text-align: center;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.title-text {
+    color: rgb(12, 12, 12);
+    background-color: rgb(5, 201, 201);
+    padding: 10px;
+    font-size: larger;
+    margin top: 0%;
+}
+
+.song-name {
+    color: white;
+    background-color: rgb(5, 201, 201); /* Matching website accent */
+    padding: 10px 20px;
+    border: 15px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+    display: inline-block;
+    text-align: center;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.4);
+}
+
+.cover-container {
+    background-color: white;
+    width: 320px;
+    padding: 20px;
+    padding-bottom: 60px; 
+    margin: 50px auto;
+    border-radius: 20px;
+    box-shadow: 0px 4px 20px rgba(0,0,0,0.6);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.music-cover {
+    width: 300px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 15px;
+    margin-bottom: 15px;
+}
+
+.controls {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+button {
+    background-color: rgb(5, 201, 201);
+    border:none;
+    border-radius:100% ;
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    cursor:pointer;
+    font-size: 20px;
+    color: white;
+    box-shadow: 0px 3px 6px rgba(0,0,0,0.3);
+    transition: transform 0.2s;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.progress-container {
+    width: 90%;
+    height: 6px;
+    background-color: #ddd;
+    border-radius: 3px;
+    margin-top: 15px;
+    overflow:hidden ;
+}
+
+.progress {
+    width: 40%; 
+    height: 100%;
+    background-color: rgb(5, 201, 201);
+}
+</style>
+</head>
+<body>
+
+<p class="title-text">BK MUSIC PLAYER</p>
+
+
+<p class="song-name">Playing "ARCADE"</p>
+
+<div class="cover-container">
+    <img src="music.jpg" alt="Music Cover" class="music-cover">
+
+    
+    <div class="controls">
+        <div>
+            <button>&laquo;</button> 
+            <button>&#9658;</button> 
+            <button>&raquo;</button> 
+        </div>
+        
+        
+        <div class="progress-container">
+            <div class="progress"></div>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
